@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <title>Check RegNo Validity!</title>
+
+</head>
+<body>
+  <div class="container">
+
+    <div class="personal_details">
+
+      <div class="header">
+          <p>Enter your details</p>
+      </div>
+
+      <form id='submitForm'>
+
+        <div class="name">
+          <input type="text" id='fName' placeholder="Enter your first name" required>
+        </div>
+
+        <div class="name">
+          <input type="text" id='sName' placeholder="Enter your second name" required>
+        </div>
+
+        <div class="name">
+          <input type="text" id="regNo" placeholder="Enter your registration" required>
+        </div>
+
+      </form>
+
+      <div class="button">
+         <button type="button" id="submitButton" onclick="validateForm()">SUBMIT</button>
+      </div>
+    </div>
+
+    <!-- Inside the "validation_results" div -->
+    <div id="validationResults">
+      <!-- <h1 id="validationMessage">Sadly your registration number is incorrect</h1> -->
+      <h2 id="additionalMessage"></h2>
+    </div>
+
+
+  </div>
+  
+</body>
+</html>
